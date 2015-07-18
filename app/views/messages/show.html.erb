@@ -2,4 +2,6 @@
 
 <p><%= @message.content %></p>
 
-<%= render 'comments/comments', message: @message %>
+<%= react_component 'CommentList', message: render(partial: 'messages/message.json', locals: {message: @message}) %>
+
+<%= render 'comments/new', message: @message %>

@@ -24,3 +24,6 @@ group :development do
   gem 'web-console', github: 'rails/web-console'
   gem 'spring'
 end
+
+gem 'react-rails', github: 'vipulnsward/react-rails', branch: 'sprockets-3-compat'
+gem 'sprockets-es6'
